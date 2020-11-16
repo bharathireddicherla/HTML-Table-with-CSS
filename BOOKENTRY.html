@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Book Entry Form
+        </title>
+        <script src="Validation.js"></script>
+    </head>
+</html>
+<body>
+    <form action="#" method="get">
+        <table>
+            <tr>
+            <td>ISBN Number </td>
+            <td><input type="text" name="isbn" id="isbnId" onchange="return isbnvalidate();"></td>
+             <td><label id="isbnMsg"></label></td>
+           </tr>
+           <tr>
+           <td>Book Title:</td>
+           <td><input type="text" name="title" id="titleId" onchange="return titleValid();"/></td>
+            <td><label id="titleMsg"></label></td>
+          </tr>
+          <tr>
+          <td><label for="priceId">Book Price:</label></td>
+          <td><input type="text" name="price" id="priceId" onchange="return priceValid();"/>
+          </td><td><label id="priceMsg"></label></td>
+          </tr>
+          <tr>
+          <td>Published Date:<td><input type="date" name="pubDate" id="pubDateId" onchange="return pubDateValid();"/></td>
+          <td><label id="dateMsg"></label></td>
+          </tr>
+          <tr>
+          <td>Number of Copies:<td><input type="text" name="copies" id="copiesId"  onchange="return copiesValid();"/></td>
+          <td><label id="copiesMsg"></label></td>
+         </tr>
+         <tr><td> Publisher Name:</td>
+        <td><input type="text" name="publisherName" id="pnameId" onchange="return pnameValid();"/></td>
+        <td><label id="pnameMsg"></label></td>
+        </tr>
+         <tr>
+            <td><input type="submit"  /></td>
+         </tr>
+       </table>
+    </form>
+</body>
